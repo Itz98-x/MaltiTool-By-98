@@ -136,18 +136,6 @@ Use it only on computers you own or are authorized to service, for example recov
 
 ---
 
-## Known issues
-
-These are bugs in the current scripts that you may want to fix:
-
-1. **Menu numbers are off by one.** The menu shows Clear Temp Files as `5`, but the code checks for `6`. The same shift applies to options 6 to 13 (the code handles 6 to 14). Option `5` does nothing and `14` is not shown. Fix by changing the `if "%choice%"==` numbers in the launcher to match the menu.
-2. **ADB ToolBox option 5** jumps to a label `apk_missing` that does not exist, and option 8 (Push File) appears in the menu but has no code.
-3. **ADB ToolBox option 1** needs `ADB D.bat`, which is not included.
-4. **File name typo:** the launcher calls `Icon Filer v2.bat` (not "Fixer"). Rename the file or fix the script so they match.
-5. **Ping Master** options 1 and 3 to 6 do not return to the menu after pinging, so the script falls through. Add `goto :start` like option 2.
-6. **Android ADB.bat** has a hardcoded user path.
-7. Variables set inside `if (...)` blocks in `ADB Toolbox.bat` (such as `apk`) need `setlocal enabledelayedexpansion` and `!var!` syntax to work reliably.
-
 ## Disclaimer
 
 These tools change system settings (firewall, network stack, registry-based icon tweaks, system files). Use them at your own risk, keep a backup or restore point, and only run them on systems you are authorized to maintain.
