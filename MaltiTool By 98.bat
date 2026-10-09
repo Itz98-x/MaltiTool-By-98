@@ -79,7 +79,7 @@ if "%choice%"=="4" (
 
 
 ::Clear Temp Files
-if "%choice%"=="6" (
+if "%choice%"=="5" (
   @echo off
   cls
   color 0a
@@ -89,7 +89,7 @@ if "%choice%"=="6" (
 
 
 ::Fix Corrupted System Files
-if "%choice%"=="7" (
+if "%choice%"=="6" (
   @echo off
   cls
   color 0a
@@ -99,7 +99,7 @@ if "%choice%"=="7" (
 
 
 ::Remove Shortcut Arrow In Windows
-if "%choice%"=="8" (
+if "%choice%"=="7" (
  @echo off
  cls
  powershell -Command "Start-Process 'By 98\Remove Shortcut Arrow In Windows.bat' -Verb RunAs"
@@ -108,7 +108,7 @@ if "%choice%"=="8" (
 
 
 ::Restore Shortcut Arrow In Windows 11
-if "%choice%"=="9" (
+if "%choice%"=="8" (
  @echo off
  cls
  color 0a
@@ -118,7 +118,7 @@ if "%choice%"=="9" (
 
 
 ::Icon Fixer
-if "%choice%"=="10" (
+if "%choice%"=="9" (
   cls
   @echo off
   color 0a
@@ -127,17 +127,17 @@ if "%choice%"=="10" (
 )
 
 ::Icon Fixer V2
-if "%choice%"=="11" (
+if "%choice%"=="10" (
   cls
   @echo off
   color 0a
- powershell -Command "Start-Process 'By 98\Icon Filer v2.bat' -Verb RunAs" 
+ powershell -Command "Start-Process 'By 98\Icon Fixer v2.bat' -Verb RunAs" 
   goto :start
 )
 
 
 ::WiFi Password Dumper (Windows)
-if "%choice%"=="12" (
+if "%choice%"=="11" (
   cls
   cd "By 98"
   start "" "WiFi Password Dumper.bat"
@@ -146,7 +146,7 @@ if "%choice%"=="12" (
 
 
 ::Ping Master
-if "%choice%"=="13" (
+if "%choice%"=="12" (
   cls
   cd "By 98"
   start "" "Ping Master.bat"
@@ -155,7 +155,7 @@ if "%choice%"=="13" (
 
 
 ::Reset IP
-if "%choice%"=="14" (
+if "%choice%"=="13" (
   cls
   cd "By 98"
   start "" "Reset IP Settings.bat"
