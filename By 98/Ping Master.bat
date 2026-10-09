@@ -56,14 +56,14 @@ set /p choice=[37;1m        [0m
 if "%choice%"=="1" (
   color 0a
   cls
-  ping google.com -t
+  start cmd /k "ping google.com -t"
 )
 
 ::ping youtube.com
 if "%choice%"=="2" (
   color 0a
   cls
-  ping youtube.com -t
+  start cmd /k "ping youtube.com -t"
   goto :start
 )
 
@@ -71,21 +71,21 @@ if "%choice%"=="2" (
 if "%choice%"=="3" (
   color 0a
   cls
-  ping 192.168.0.1 -t
+  start cmd /k "ping 192.168.0.1 -t"
 )
 
 ::ping 192.168.1.1
 if "%choice%"=="4" (
   color 0a
   cls
-  ping 192.168.1.1 -t
+  start cmd /k ping "192.168.1.1 -t"
 )
 
 ::ping 192.168.10.1
 if "%choice%"=="5" (
   color 0a
   cls
-  ping 192.168.10.1 -t
+  start cmd /k "ping 192.168.10.1 -t"
 )
 
 
@@ -95,7 +95,7 @@ if "%choice%"=="6" (
   cls
   set /p castom_ping=Enter The Address: 
   cls
-  ping !castom_ping! -t
+  start cmd /k "ping !castom_ping! -t"
 )
 
 

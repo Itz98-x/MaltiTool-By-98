@@ -28,7 +28,7 @@ echo.
 set /p choice=   Choose Mode:
 
 if "%choice%"=="1" (
-    start "" "ADB D.bat"
+    start "" "ADB Device.bat"
     goto start
 )
 
@@ -57,6 +57,7 @@ if "%choice%"=="5" (
     cls
     set "apk="
     set /p "apk=Enter APK path (or drag and drop the file here): "
+    if not defined apk goto start
     set "apk=%apk:"=%"
     if not exist "%apk%" goto apk_missing
     adb install "%apk%"
@@ -65,7 +66,8 @@ if "%choice%"=="5" (
     echo.
     echo File not found: "%apk%"
     pause
-    goto start
+goto start
+
 )
 
 if "%choice%"=="6" (
