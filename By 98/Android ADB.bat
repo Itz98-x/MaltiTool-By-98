@@ -1,0 +1,1 @@
+cmd /K cd /d "C:\Users\Hacker_98\Desktop\Android\platform-tools"
